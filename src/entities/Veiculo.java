@@ -45,6 +45,8 @@ public abstract class Veiculo {
 	public void controlarVelocidade() {
 		Scanner sc = new Scanner(System.in);
 		
+		System.out.println("\nVelocidade atual do ve�culo: " + velocidade);
+		
 		int opcao = 1;
 		while(opcao != 0) {
 			System.out.println("Para acelerar o Veiculo digite 1, para frear digite 2 e para sair digite 0: ");

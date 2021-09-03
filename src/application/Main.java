@@ -12,7 +12,7 @@ public class Main {
 		int tipoVeiculo = 0;
 		
 		while(tipoVeiculo != 1 && tipoVeiculo != 2 && tipoVeiculo != 3) {
-			System.out.println("Informe o tipo de veículo:\n(1 para Carro, 2 para Bicicleta ou 3 sair) ");
+			System.out.println("Informe o tipo de veï¿½culo:\n(1 para Carro, 2 para Bicicleta ou 3 sair) ");
 			tipoVeiculo = sc.nextInt();
 			sc.nextLine();
 			
@@ -26,7 +26,7 @@ public class Main {
 			case 3:
 				break;
 			default:
-				System.out.println("Valor informado não corresponde nenhum veículo\n");
+				System.out.println("Valor informado nï¿½o corresponde nenhum veï¿½culo\n");
 				break;
 			}
 		}
@@ -47,21 +47,18 @@ public class Main {
 		Double velocidade = sc.nextDouble();
 		
 		Carro carro = new Carro(marca, modelo, velocidade, placa, chassi);
-		
-		System.out.println("Velocidade atual do veículo: " + carro.getVelocidade());
-		
+				
 		carro.controlarVelocidade();
-		
 		System.out.println(carro.toString());
 	}
 	
 	public static void tipoBicicleta() {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Informe a marca do bicicleta: ");
+		System.out.println("Informe a marca da bicicleta: ");
 		String marca = sc.nextLine();
-		System.out.println("Informe o modelo do bicicleta: ");
+		System.out.println("Informe o modelo da bicicleta: ");
 		String modelo = sc.nextLine();
-		System.out.println("Informe o número do registro do quadro da bicicleta: ");
+		System.out.println("Informe o nï¿½mero da registro do quadro da bicicleta: ");
 		String registroDoQuadro = sc.nextLine();
 		System.out.println("Informe a velocidade da bicicleta: ");
 		Double velocidade = sc.nextDouble();
